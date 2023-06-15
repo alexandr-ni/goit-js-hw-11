@@ -1,4 +1,4 @@
-import SimpleLightbox from 'simplelightbox';
+// import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
 import { searchRequest } from './js/request';
 import { renderPicture } from './js/render-picture';
@@ -12,7 +12,7 @@ loadMoreBtn.classList.add('is-hidden');
 
 let value = 1;
 
-const bigPicture = new SimpleLightbox('.gallery a');
+// const bigPicture = new SimpleLightbox('.gallery a');
 
 formSubmit.addEventListener('submit', onFormSubmit);
 loadMoreBtn.addEventListener('click', onLoadMore);
@@ -37,7 +37,7 @@ async function createPicture(page) {
 
   galleryContainerEl.insertAdjacentHTML('beforeend', imgEl);
 
-  bigPicture.refresh();
+//   bigPicture.refresh();
 }
 
 function onFormSubmit(e) {
