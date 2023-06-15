@@ -1,2 +1,6 @@
 @import './common';
-@import './example';
+
+// components
+@import './components/form.scss';
+@import './components/load-more.scss';
+@import './components/is-hidden.scss';
