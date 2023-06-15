@@ -1,7 +1,7 @@
-import { searchRequest } from './js/request';
-import { renderPicture } from './js/render-picture';
 import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
+import { searchRequest } from './js/request';
+import { renderPicture } from './js/render-picture';
 
 const formSubmit = document.querySelector('.search-form');
 const formInput = document.querySelector('input');
