@@ -43,11 +43,9 @@ async function createPicture(page) {
 function onFormSubmit(e) {
   e.preventDefault();
 
-  loadMoreBtn.classList.remove('is-hidden');
+  galleryContainerEl.innerHTML = '';
 
   value = 1;
 
   createPicture(value);
-
-  galleryContainerEl.innerHTML = '';
 }
