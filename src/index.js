@@ -8,8 +8,6 @@ const formInput = document.querySelector('input');
 const galleryContainerEl = document.querySelector('.gallery');
 const loadMoreBtn = document.querySelector('.load-more');
 
-loadMoreBtn.classList.add('is-hidden');
-
 let value = 1;
 
 const bigPicture = new SimpleLightbox('.gallery a');
@@ -32,6 +30,8 @@ function onLoadMore() {
 }
 
 async function createPicture(page) {
+  removeLoadBtn();
+
   const getArray = await searchRequest(formInput.value, page);
   const imgEl = renderPicture(getArray);
 
